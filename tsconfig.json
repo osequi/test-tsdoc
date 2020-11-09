@@ -9,7 +9,7 @@
   },
   "lib": ["es2015"],
   "typedocOptions": {
-    "mode": "file",
+    "mode": "modules",
     "out": "docs"
   }
 }
