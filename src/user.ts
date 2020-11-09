@@ -15,7 +15,7 @@ export type User = {
 /**
  * Defines the default value for User.
  */
-const defaultProps = {
+const defaultUser = {
   name: "Jo",
   age: 33,
 };
@@ -24,7 +24,7 @@ const defaultProps = {
  * Returns user name and age.
  */
 const user = (props?: User): string => {
-  const { name, age } = { ...defaultProps, ...props };
+  const { name, age } = { ...defaultUser, ...props };
   return `${name} is ${age}`;
 };
 

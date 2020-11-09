@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +7,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> Home</title>
+  <title> pet.ts</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -73,33 +75,50 @@
         <div class="core" id="main-content-wrapper">
             <div class="content">
                 <header class="page-title">
-                    <p></p>
-                    <h1>Home</h1>
+                    <p>Source</p>
+                    <h1>pet.ts</h1>
                 </header>
                 
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Defines the Pet type.
+ */
+export type Pet = {
+  /**
+   * The pet name.
+   */
+  name: string;
+  /**
+   * The pet age.
+   */
+  age: number;
+};
 
+/**
+ * Defines the default value for Pet.
+ */
+const defaultPet = {
+  name: "Kitty",
+  age: 3,
+};
 
-    <h3> </h3>
+/**
+ * Returns pet name and age.
+ */
+const pet = (props?: Pet): string => {
+  const { name, age } = { ...defaultPet, ...props };
+  return `${name} is ${age}`;
+};
 
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+export default pet;
+</code></pre>
+        </article>
+    </section>
 
 
 

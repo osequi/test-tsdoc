@@ -15,7 +15,7 @@ export type Pet = {
 /**
  * Defines the default value for Pet.
  */
-const defaultProps = {
+const defaultPet = {
   name: "Kitty",
   age: 3,
 };
@@ -24,7 +24,7 @@ const defaultProps = {
  * Returns pet name and age.
  */
 const pet = (props?: Pet): string => {
-  const { name, age } = { ...defaultProps, ...props };
+  const { name, age } = { ...defaultPet, ...props };
   return `${name} is ${age}`;
 };
 
