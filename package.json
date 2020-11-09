@@ -6,7 +6,14 @@
   },
   "scripts": {
     "start": "tsc && node dist/index.js",
-    "docs": "typedoc",
+    "docs": "typedoc --plugin none --theme minimal",
     "md": "typedoc --plugin typedoc-plugin-markdown"
-  }
+  },
+  "name": "test-tsdoc",
+  "version": "1.0.0",
+  "description": "Playing with TSDoc",
+  "main": "index.js",
+  "repository": "git@github.com:osequi/test-tsdoc.git",
+  "author": "osequi <cs@osequi.com>",
+  "license": "MIT"
 }
