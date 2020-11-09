@@ -1,5 +1,14 @@
 /**
  * Defines the Pet type.
+ *
+ * **Important! This is markdown!!**
+ *
+ * Example:
+ * ```js
+ * const test = Test()
+ * ```
+ *
+ * @category Types
  */
 export type Pet = {
   /**
@@ -22,6 +31,8 @@ const defaultPet = {
 
 /**
  * Returns pet name and age.
+ *
+ * @category Functions
  */
 const pet = (props?: Pet): string => {
   const { name, age } = { ...defaultPet, ...props };

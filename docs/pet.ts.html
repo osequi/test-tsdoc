@@ -66,9 +66,13 @@
             id="sidebarNav"
         >
             
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
             <nav>
                 
-                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Global</h3><ul><li><a href="global.html#defaultPet">defaultPet</a></li><li><a href="global.html#defaultUser">defaultUser</a></li><li><a href="global.html#pet">pet</a></li><li><a href="global.html#user">user</a></li></ul></div>
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Global</h3><ul><li><a href="global.html#defaultPet">defaultPet</a></li><li><a href="global.html#defaultUser">defaultUser</a></li></ul></div><div class="category"><h2>Functions</h2><h3>Global</h3><ul><li><a href="global.html#pet">pet</a></li><li><a href="global.html#user">user</a></li></ul></div><div class="category"><h2>Types</h2><h3><a href="global.html">Global</a></h3></div>
                 
             </nav>
         </div>
@@ -87,6 +91,15 @@
         <article>
             <pre class="prettyprint source linenums"><code>/**
  * Defines the Pet type.
+ *
+ * **Important! This is markdown!!**
+ *
+ * Example:
+ * ```js
+ * const test = Test()
+ * ```
+ *
+ * @category Types
  */
 export type Pet = {
   /**
@@ -109,6 +122,8 @@ const defaultPet = {
 
 /**
  * Returns pet name and age.
+ *
+ * @category Functions
  */
 const pet = (props?: Pet): string => {
   const { name, age } = { ...defaultPet, ...props };
@@ -142,6 +157,8 @@ export default pet;
 <script src="scripts/app.min.js"></script>
 <script>PR.prettyPrint();</script>
 <script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
 
 </body>
 </html>

@@ -1,5 +1,7 @@
 /**
  * Defines the User type.
+ *
+ * @category Types
  */
 export type User = {
   /**
@@ -22,6 +24,8 @@ const defaultUser = {
 
 /**
  * Returns user name and age.
+ *
+ * @category Functions
  */
 const user = (props?: User): string => {
   const { name, age } = { ...defaultUser, ...props };
